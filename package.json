@@ -5,10 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "live-server --port=8080 --open=/",
-    "dev": "live-server --port=8080 --open=/ --watch=.",
-    "serve": "python3 -m http.server 8080",
-    "build": "echo 'Static site ready for deployment'",
-    "test": "echo \"No tests specified\" && exit 0"
+    "dev": "live-server --port=8080 --open=/ --watch=."
   },
   "keywords": [
     "南山田小学校",
@@ -17,12 +14,5 @@
     "静的サイト"
   ],
   "author": "子どもネット21南山田",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "."
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  }
+  "license": "ISC"
 }
