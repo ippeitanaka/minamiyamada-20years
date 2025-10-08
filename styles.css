@@ -103,6 +103,32 @@ body::before {
     line-height: 1.8;
 }
 
+/* 準備中画像 */
+.under-construction {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.construction-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
 /* セクション共通スタイル */
 section {
     padding: 80px 0;
@@ -319,6 +345,12 @@ footer p {
     }
 }
 
+@media (max-width: 768px) {
+    .construction-image {
+        max-width: 400px;
+    }
+}
+
 @media (max-width: 480px) {
     .title-main {
         font-size: 2rem;
@@ -343,6 +375,10 @@ footer p {
     section {
         padding: 60px 0;
         margin: 20px 0;
+    }
+    
+    .construction-image {
+        max-width: 300px;
     }
 }
 
